@@ -1,0 +1,11 @@
+# Grab from backpage, and classify according to ads I like.
+
+import requests
+import lxml.html
+from text.classifiers import NaiveBayesClassifier
+
+def grab_links(addr):
+    r = requests.get(addr)
+    html = lxml.html.fromstring(r.text)
+    link_obj = html.xpath('//div[@class="cat"]/a')
+    links = 
