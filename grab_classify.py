@@ -28,6 +28,11 @@ for i in xrange(5):
         for j in tmp:
             classes.append(j)
 
+#if things go wrong:
+# tmp = grab_links(url)
+# for i in tmp:
+#    classes.append(i)
+
 train = []
 test = []
 with open("english.txt","r") as eng:
