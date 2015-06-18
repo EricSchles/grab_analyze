@@ -1,5 +1,5 @@
 # Grab from backpage, and classify according to ads I like.
-
+#disclaimer: You will need numpy for textblob to actually install
 import requests
 import lxml.html
 from text.classifiers import NaiveBayesClassifier
